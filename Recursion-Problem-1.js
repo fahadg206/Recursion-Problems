@@ -3,7 +3,7 @@
 function factorial(n) {
 
     if (n < 0) {
-        return console.log('Can not find the factorial of a negative number')
+        return;
     }
 
     if (n < 2) {

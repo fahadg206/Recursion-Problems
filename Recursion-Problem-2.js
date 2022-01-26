@@ -2,18 +2,17 @@
 
 function sumArray(arr) {
 
-    let sum = 0;
+    if(arr.length === 1) {
+        return arr[0]
+    } else {
 
-    for(let i=0; i < arr.length; i++) {
-
-        sum += arr[i];
-        
+        return arr.pop() + sumArray(arr)
     }
+    
 
-    return sum
 }
 
-let myArray = [10, 15, 2, 19, 55]
+let myArray = [2, 2, 2, 2]
 
-console.log(sumArray(myArray))
+console.log(sumArray(myArray)) 
 
